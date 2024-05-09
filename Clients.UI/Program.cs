@@ -1,3 +1,4 @@
+using Clients.UI.Persistance;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

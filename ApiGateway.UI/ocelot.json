@@ -1,0 +1,44 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Franchise",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7124
+        }
+      ],
+      "UpstreamPathTemplate": "/GetFranchise",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Franchise/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7124
+        }
+      ],
+      "UpstreamPathTemplate": "/GetByIdFranchise/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Franchise",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7124
+        }
+      ],
+      "UpstreamPathTemplate": "/PostFranchise",
+      "UpstreamHttpMethod": [ "Post" ]
+    }
+
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5000"
+  }
+}

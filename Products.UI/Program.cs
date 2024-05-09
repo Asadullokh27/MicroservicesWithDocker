@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Products.UI.Persistance;
 
 var builder = WebApplication.CreateBuilder(args);
 

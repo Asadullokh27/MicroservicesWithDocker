@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  franchises.ui:
+    image: ${DOCKER_REGISTRY-}franchisesui
+    build:
+      context: .
+      dockerfile: Franchises.UI/Dockerfile
+
+  employees.ui:
+    image: ${DOCKER_REGISTRY-}employeesui
+    build:
+      context: .
+      dockerfile: Employees.UI/Dockerfile
+
+
+  products.ui:
+    image: ${DOCKER_REGISTRY-}productsui
+    build:
+      context: .
+      dockerfile: Products.UI/Dockerfile
+

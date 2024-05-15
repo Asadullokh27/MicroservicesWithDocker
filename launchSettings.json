@@ -6,7 +6,8 @@
       "serviceActions": {
         "franchises.ui": "StartDebugging",
         "employees.ui": "StartDebugging",
-        "products.ui": "StartDebugging"
+        "products.ui": "StartDebugging",
+        "apigateway.ui": "StartDebugging"
       }
     }
   }
